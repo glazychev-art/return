@@ -28,4 +28,4 @@ jobs:
       - name: Docker Push
         id: docker_push
         run: |
-          docker buildx build --platform linux/amd64,linux/arm64 -t ghcr.io/${{github.repository}}/return . --push
+          docker buildx build --platform linux/amd64,linux/arm64 -t ghcr.io/${{github.repository}} . --push
